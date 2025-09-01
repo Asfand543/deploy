@@ -120,7 +120,7 @@ function defaultEmoji() {
 defaultEmoji();
 // Emoji.json
 {
-    "Happy"; [
+    "Happy";~ [
         { "emoji": "????", "name": "Grinning Face" },
         { "emoji": "????", "name": "Beaming Face with Smiling Eyes" },
         { "emoji": "????", "name": "Smiling Face with Open Mouth and Smiling Eyes" },
