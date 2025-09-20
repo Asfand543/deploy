@@ -1,0 +1,10 @@
+pipeline{
+    stage any
+    stages{
+        stage('update'){
+            steps {
+                echo 'the code is update'
+            }
+        }
+    }
+}
