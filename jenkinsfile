@@ -1,6 +1,7 @@
 node {
     stage('update file'){
         echo 'change the file'
+        echo 'i am back'
 
     }
 }
