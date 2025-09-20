@@ -1,7 +1,31 @@
-node {
-    stage('update file'){
-        echo 'change the file'
-        echo 'i am back'
+pipeline {
+    agent any
 
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/Asfand543/deploy.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "Building project..."
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Running tests..."
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploying project..."
+            }
+        }
     }
 }
+0
